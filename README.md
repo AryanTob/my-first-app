@@ -1,10 +1,6 @@
-# my-first-app
+# my-first-app-fall-2024
 
 ## Setup
-
-Todo: create and activate a virtual environment
-
-Todo: install packages
 
 Create a virtual environment (first time only):
 
@@ -24,6 +20,15 @@ Install packages:
 pip install -r requirements.txt
 ```
 
+[Obtain an API Key](https://www.alphavantage.co/support/#api-key) from AlphaVantage.
+
+Create a ".env" file and add contents like the following (using your own AlphaVantage API Key):
+
+```sh
+# this is the ".env" file:
+ALPHAVANTAGE_API_KEY="..."
+```
+
 ## Usage
 
 Run the example script:
@@ -32,10 +37,10 @@ Run the example script:
 python app/my_script.py
 ```
 
+Run the unemployment report:
 
-Run the unemployment report: 
+```sh
+#ALPHAVANTAGE_API_KEY="..." python app/unemployment.py
 
-'''sh
-ALPHAVANTAGE_API_KEY="..." python app/unemployment.py
-'''
-
+python app/unemployment.py
+```
